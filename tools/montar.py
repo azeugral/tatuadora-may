@@ -37,7 +37,7 @@ rep = {
  '{{COB1}}': dados.C[0]['id'], '{{COB1T}}': dados.C[0]['t'], '{{NEGRA}}': '191_0',
  '{{PECAS}}': json.dumps([dict(id=p['id'], s=p['s'], leg=p['leg'], t=p['t'], fotos=p['fotos']) for p in dados.P], ensure_ascii=False),
  '{{COBS}}': json.dumps([dict(id=c['id'], t=c['t']) for c in dados.C], ensure_ascii=False), '{{SENTJ}}': json.dumps(SENT, ensure_ascii=False),
- '{{LEGS}}': json.dumps(LEGS, ensure_ascii=False), '{{V}}': '1',
+ '{{LEGS}}': json.dumps(LEGS, ensure_ascii=False), '{{V}}': '2',
 }
 for k, v in rep.items(): h = h.replace(k, v)
 (S / 'index.html').write_text(h, encoding='utf8')

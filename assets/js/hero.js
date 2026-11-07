@@ -163,7 +163,7 @@
       var e = estado(t), ba = alvos[e.a], bb = alvos[e.b];
       if (!ba || !bb) { ba = alvos[e.a] || alvos[0]; bb = ba; e.m = 0; }
       if (!ba) return e;
-      var dt = ult < 0 ? 1 / 60 : Math.min(.05, Math.max(.001, t - ult)); ult = t;
+      var dt = (ult < 0 || t <= ult) ? 1 / 60 : Math.min(.05, t - ult); ult = t;
       var dec = flut ? Math.pow(.84, dt * 60) : 0;
       var cor = fb[0], ant = fb[1]; fb = [ant, cor];
       gl.bindFramebuffer(gl.FRAMEBUFFER, cor.f); gl.viewport(0, 0, W, H);

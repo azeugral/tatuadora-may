@@ -68,7 +68,7 @@ section{padding:var(--sec) 0;position:relative}
 .menu .bt{font:600 13.5px/1.2 Montserrat;margin-top:14px}
 
 /* hero */
-.hero{position:relative;height:100svh;min-height:600px;max-height:1200px;padding:0;overflow:hidden;background:var(--bg)}
+.hero{--art:min(84svh,46vw);position:relative;height:100svh;min-height:600px;max-height:1200px;padding:0;overflow:hidden;background:var(--bg)}
 .hero-fundo{position:absolute;inset:0}
 .hero-fundo canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hero-fundo .vd{position:absolute;left:50%;object-fit:contain;transform:translateX(-50%);-webkit-mask-image:radial-gradient(closest-side,#000 80%,transparent 100%);mask-image:radial-gradient(closest-side,#000 80%,transparent 100%)}
@@ -245,7 +245,7 @@ section{padding:var(--sec) 0;position:relative}
   .hero-lado.e .hero-txt{display:none}
   .hero-lado.d .hero-tit{display:none}
   .hero-lado.d .hero-txt{margin-top:0;font-size:15px}
-  .hero-bts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+  .hero-bts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:14px}
   .hero-bts .bt{margin:0;max-width:none;padding:0 8px;font-size:12.5px;letter-spacing:.06em}
   .hero-rod{position:static;order:3;padding:0 var(--marg) 10px;font-size:12.5px}
   .hero-rod b{font-size:19px}
@@ -287,6 +287,8 @@ section{padding:var(--sec) 0;position:relative}
   .etapa p{display:none}
   .etapa h3{font-size:13.5px}
 }
+@media (max-height:640px) and (max-width:1023px) and (orientation:portrait){.hero-lado.d .hero-txt{display:none}.hero-bts{margin-top:4px}.hero-fundo{min-height:170px}}
+@media (max-width:350px){.hero-bts .bt{font-size:11px;letter-spacing:.03em;padding:0 4px;min-height:48px}.hero-lado.d .hero-txt{font-size:13.5px;line-height:1.5}}
 @media (max-height:520px) and (orientation:landscape){
   .hero{display:block;height:auto;min-height:520px;padding:0}
   .hero-fundo{position:absolute;inset:60px 0 0 0}

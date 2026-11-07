@@ -42,9 +42,10 @@
     if (!T) { cv.remove(); estatico(); return; }
     var dpr = Math.min(devicePixelRatio || 1, 2), W, H, op = {};
     function mede() {
-      var r = hero.getBoundingClientRect(), w = Math.min(innerWidth, 2560), h = r.height;
+      var r = fundo.getBoundingClientRect(), w = Math.min(r.width, 2560), h = r.height, gde = innerWidth >= 1024;
       var esc = Math.min(dpr, 2400 / w); W = Math.round(w * esc); H = Math.round(h * esc); T.tamanho(W, H);
-      var art = Math.min(h * .84, w * .46); hero.style.setProperty('--art', art + 'px');
+      var art = gde ? Math.min(h * .84, w * .46) : Math.min(h * .96, w * (innerHeight < 520 ? .42 : .96));
+      if (gde) hero.style.setProperty('--art', art + 'px');
       op = { lado: art * esc * .96, pt: 1.55 * esc, a: .3 / Math.max(1, esc * .75), cx: 0, cy: -.015 };
     }
     mede(); addEventListener('resize', mede);
