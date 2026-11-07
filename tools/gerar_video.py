@@ -33,7 +33,7 @@ with sync_playwright() as p:
     if 'video' in Q:
         mp4 = S / 'assets/video/hero.mp4'; n = int(PAR * 3 * FPS); BL = 500
         tmp = S.parent / '_ref/hero-tmp.mp4'
-        enc = subprocess.Popen([ff, '-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', str(FPS), '-c:v', 'mjpeg', '-i', '-', '-vf', 'format=yuv420p', '-c:v', 'libx264', '-preset', 'slow', '-crf', '24', '-profile:v', 'high', '-color_range', 'tv', '-r', str(FPS), '-movflags', '+faststart', '-an', str(tmp)], stdin=subprocess.PIPE)
+        enc = subprocess.Popen([ff, '-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', str(FPS), '-c:v', 'mjpeg', '-i', '-', '-vf', 'format=yuv420p', '-c:v', 'libx264', '-preset', 'slow', '-crf', '24', '-profile:v', 'high', '-color_range', 'tv', '-colorspace', 'smpte170m', '-color_primaries', 'smpte170m', '-color_trc', 'smpte170m', '-r', str(FPS), '-movflags', '+faststart', '-an', str(tmp)], stdin=subprocess.PIPE)
         for i0 in range(0, n, BL):
             b, g = abre(p)  # navegador novo a cada bloco: o longo estoura a memoria da pagina
             for k in range(30): foto(g, (i0 - 30 + k) / FPS + (PAR * 3 if i0 == 0 else 0))

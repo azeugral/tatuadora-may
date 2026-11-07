@@ -68,7 +68,7 @@
   }
   function video() {
     var v = document.createElement('video'); v.className = 'vd'; v.muted = true; v.loop = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.setAttribute('aria-hidden', 'true');
-    v.poster = 'assets/img/hero/poster.webp'; v.src = 'assets/video/hero.mp4'; v.preload = 'auto'; fundo.appendChild(v);
+    v.poster = 'assets/img/hero/poster.webp'; v.src = 'assets/video/hero.mp4?v=2'; v.preload = 'auto'; fundo.appendChild(v);
     var P = heroMay.PAR, n = 3, VID = [0, 3, 4];
     var p = v.play();
     if (p) p.catch(function () { v.remove(); webgl(70000); });
