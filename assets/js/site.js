@@ -36,7 +36,7 @@
   function clique(e) { if (avanca && !e.target.closest('a,button')) avanca(); }
   hero.addEventListener('click', clique);
   fundo.addEventListener('keydown', function (e) { if ((e.key === 'Enter' || e.key === ' ') && avanca) { e.preventDefault(); avanca(); } });
-  function estatico() { pos.hidden = false; rod.hidden = true; }
+  function estatico() { pos.hidden = false; $('.hero-rod').hidden = true; }
   function webgl(n) {
     var cv = document.createElement('canvas'); fundo.appendChild(cv);
     var T;
