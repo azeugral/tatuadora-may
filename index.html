@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>May Tattoo Artist | Fine line em Feira de Santana, BA</title>
+<meta name="description" content="May é tatuadora em Feira de Santana, BA. Fine line, floral a mão livre, homenagens e coberturas no Duo Ink Tattoo Studio. Atendimento apenas com agendamento.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b0f0e">
+<meta property="og:title" content="May Tattoo Artist">
+<meta property="og:description" content="Especialista em transformar sentimentos em arte. Feira de Santana, BA.">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preload" href="assets/fonts/cinzel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Cinzel;src:url(assets/fonts/cinzel.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:Montserrat;src:url(assets/fonts/montserrat.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:Escrita;src:url(assets/fonts/script.woff2) format("woff2");font-display:swap}
+:root{--bg:#0b0f0e;--bg2:#101614;--esm-f:#0d2421;--tx:#efe8da;--mu:#a9a595;--ouro:#dcb76e;--ouro2:#f4dc9f;--esm:#2fa893;--li:rgba(220,183,110,.22);--mol:cubic-bezier(.16,.84,.32,1);--marg:clamp(20px,5vw,72px);--sec:clamp(76px,11vw,156px)}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.7 Montserrat,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+img{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{background:none;border:0;padding:0;cursor:pointer}
+h1,h2,h3,p,figure,blockquote,ul,ol{margin:0;padding:0}
+ul,ol{list-style:none}
+:focus-visible{outline:2px solid var(--ouro2);outline-offset:3px}
+.saltar{position:fixed;left:12px;top:-60px;z-index:60;background:var(--ouro);color:#14110a;padding:10px 14px}.saltar:focus{top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* tipografia */
+.h2{font:500 clamp(29px,4.2vw,52px)/1.2 Cinzel,serif;letter-spacing:.005em;text-wrap:balance}
+.olho{display:block;font:400 clamp(30px,3.4vw,42px)/1.3 Escrita,cursive;color:var(--ouro);padding-bottom:.08em;margin-bottom:6px}
+.lead{color:var(--mu);max-width:58ch;margin:18px auto 0;font-size:clamp(15.5px,1.2vw,17.5px)}
+.cab{text-align:center;max-width:820px;margin:0 auto clamp(38px,5vw,68px);padding:0 var(--marg)}
+section{padding:var(--sec) 0;position:relative}
+.caixa{max-width:1320px;margin:0 auto;padding:0 var(--marg)}
+
+/* botoes retos com fio de ouro nas pontas */
+.bt{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;font:600 13.5px/1.2 Montserrat;letter-spacing:.09em;text-transform:uppercase;white-space:nowrap;border:1px solid var(--ouro);background:var(--ouro);color:#15110a;transition:transform .3s var(--mol),background .3s var(--mol),color .3s var(--mol),border-color .3s var(--mol)}
+.bt:hover{background:var(--ouro2);border-color:var(--ouro2)}
+.bt:active{transform:translateY(1px) scale(.985)}
+.bt.fio{background:transparent;color:var(--ouro2)}
+.bt.fio:hover{background:rgba(220,183,110,.12);border-color:var(--ouro2)}
+.bt.pleno{width:100%}
+
+/* topo */
+.topo{position:fixed;inset:0 0 auto 0;z-index:40;height:76px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 var(--marg);transition:background .4s var(--mol),border-color .4s var(--mol);border-bottom:1px solid transparent}
+.topo.cheio{background:rgba(11,15,14,.9);border-color:var(--li)}
+.nav{display:flex;gap:clamp(18px,2.4vw,38px);font:500 12.5px/1 Montserrat;letter-spacing:.1em;text-transform:uppercase}
+.nav.d{justify-content:flex-end}
+.nav a{position:relative;padding:10px 0;color:var(--tx);white-space:nowrap}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:3px;height:1px;background:var(--ouro);transform:scaleX(0);transition:transform .35s var(--mol)}
+.nav a:hover::after{transform:scaleX(1)}
+.marca img{height:52px;width:auto}
+.bt-menu{display:none;justify-self:end;width:46px;height:46px;position:relative;grid-column:3}
+.bt-menu i{position:absolute;left:10px;right:10px;height:1.5px;background:var(--ouro2);transition:transform .35s var(--mol),top .35s var(--mol)}
+.bt-menu i:first-child{top:18px}.bt-menu i:last-child{top:27px}
+.bt-menu[aria-expanded=true] i:first-child{top:22px;transform:rotate(45deg)}
+.bt-menu[aria-expanded=true] i:last-child{top:22px;transform:rotate(-45deg)}
+.menu{position:fixed;inset:0;z-index:35;background:#0b0f0e;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(12px,3vh,22px);padding:88px 24px 32px;text-align:center;overflow-y:auto}
+.menu a{font:500 clamp(23px,6.6vw,30px)/1.3 Cinzel,serif}
+.menu .bt{font:600 13.5px/1.2 Montserrat;margin-top:14px}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:600px;max-height:1200px;padding:0;overflow:hidden;background:var(--bg)}
+.hero-fundo{position:absolute;inset:0}
+.hero-fundo canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-fundo .vd{position:absolute;left:50%;object-fit:contain;transform:translateX(-50%);-webkit-mask-image:radial-gradient(closest-side,#000 80%,transparent 100%);mask-image:radial-gradient(closest-side,#000 80%,transparent 100%)}
+.hero-fundo img.pos{position:absolute;left:50%;transform:translateX(-50%)}
+.hero-lado{z-index:2;position:absolute;top:50%;transform:translateY(-50%);width:calc((100% - var(--art)) / 2 - var(--marg) - 14px);max-width:360px}
+.hero-lado.e{left:var(--marg);text-align:right;margin-left:auto;left:auto;right:calc(50% + var(--art) / 2 + 14px)}
+.hero-lado.d{left:calc(50% + var(--art) / 2 + 14px);text-align:left}
+.hero-tit{font:500 clamp(26px,2.7vw,50px)/1.18 Cinzel,serif;display:block}
+.hero-txt{color:var(--mu);margin-top:18px;font-size:clamp(14.5px,1.05vw,16.5px)}
+.hero-lado .bt{margin-top:26px;width:100%;max-width:290px}
+.hero-rod{z-index:2;position:absolute;left:0;right:0;bottom:clamp(14px,3vh,30px);text-align:center;color:var(--mu);font-size:13.5px;line-height:1.5;padding:0 var(--marg);transition:opacity .5s var(--mol)}
+.hero-rod b{display:block;font:400 21px/1.3 Escrita,cursive;color:var(--ouro);padding-bottom:1px}
+
+/* prova */
+.prova{padding:0;border-block:1px solid var(--li);background:var(--bg2)}
+.prova ul{display:grid;grid-template-columns:repeat(4,1fr);max-width:1320px;margin:0 auto}
+.prova li{padding:clamp(22px,3vw,34px) 16px;text-align:center;border-left:1px solid var(--li)}
+.prova li:first-child{border-left:0}
+.prova b{display:block;font:500 clamp(23px,2.5vw,32px)/1.25 Cinzel,serif;color:var(--ouro2)}
+.prova span{display:block;color:var(--mu);font-size:13.5px;line-height:1.45;margin-top:4px}
+
+/* portfolio */
+.filtros{display:flex;flex-wrap:wrap;justify-content:center;gap:0;max-width:980px;margin:0 auto clamp(28px,4vw,48px);padding:0 var(--marg)}
+.filtros button{position:relative;padding:12px clamp(12px,1.8vw,24px);font:400 clamp(23px,2.3vw,30px)/1.3 Escrita,cursive;color:var(--mu);transition:color .3s var(--mol)}
+.filtros button::after{content:"";position:absolute;left:50%;bottom:6px;width:0;height:1px;background:var(--ouro);transform:translateX(-50%);transition:width .35s var(--mol)}
+.filtros button:hover{color:var(--tx)}
+.filtros button[aria-pressed=true]{color:var(--ouro2)}
+.filtros button[aria-pressed=true]::after{width:34px}
+.grade{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(6px,.8vw,12px)}
+.peca{position:relative;display:block;width:100%;aspect-ratio:4/5;overflow:hidden;background:#1a1d1a;text-align:left}
+.peca img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--mol)}
+.peca::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,11,10,.82),transparent 46%);opacity:0;transition:opacity .4s var(--mol)}
+.peca span{position:absolute;left:14px;right:14px;bottom:12px;z-index:1;font:500 15px/1.3 Cinzel,serif;opacity:0;transform:translateY(6px);transition:opacity .35s var(--mol),transform .35s var(--mol)}
+@media (hover:hover){.peca:hover img{transform:scale(1.035)}.peca:hover::after{opacity:1}.peca:hover span{opacity:1;transform:none}}
+.mais{display:flex;justify-content:center;margin-top:clamp(28px,4vw,44px)}
+
+/* metamorfose */
+.meta{background:var(--esm-f)}
+.etapas{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,28px)}
+.etapa video,.etapa .mid{width:100%;aspect-ratio:4/5;object-fit:cover;background:#16302c}
+.etapa h3{font:500 clamp(21px,2vw,26px)/1.3 Cinzel,serif;margin-top:20px;text-align:center}
+.etapa em{display:block;font:400 25px/1.3 Escrita,cursive;color:var(--ouro);text-align:center;padding-bottom:2px}
+.etapa p{color:#b9bfb1;text-align:center;margin:8px auto 0;max-width:36ch;font-size:15px}
+.cita{max-width:760px;margin:clamp(44px,6vw,76px) auto 0;text-align:center;padding:0 var(--marg)}
+.cita p{font:400 clamp(25px,3vw,38px)/1.32 Escrita,cursive;color:var(--ouro2)}
+.cita cite{display:block;font:500 12.5px/1.4 Montserrat;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);margin-top:10px}
+
+/* sobre */
+.sobre .duo{display:grid;grid-template-columns:5fr 6fr;gap:clamp(28px,5vw,80px);align-items:center}
+.sobre figure img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.sobre p+p{margin-top:14px}
+.sobre .txt p{color:#c9c6b9}
+.linhas{margin-top:24px;border-top:1px solid var(--li)}
+.linhas li{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--li);font-size:14.5px}
+.linhas li span:first-child{color:var(--mu)}
+.linhas li span:last-child{text-align:right}
+
+/* pele */
+.pele{background:var(--bg2)}
+.pele-g{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--li);border-left:1px solid var(--li)}
+.pele-g li{padding:clamp(20px,2.4vw,32px);border-right:1px solid var(--li);border-bottom:1px solid var(--li);text-align:center}
+.pele-g h3{font:500 clamp(18px,1.6vw,21px)/1.3 Cinzel,serif;color:var(--ouro2);margin-bottom:8px}
+.pele-g p{color:var(--mu);font-size:14.5px;line-height:1.6}
+.negra{display:grid;grid-template-columns:5fr 6fr;gap:clamp(24px,4vw,64px);align-items:center;margin-top:clamp(36px,5vw,64px)}
+.negra img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.negra h3{font:500 clamp(23px,2.6vw,34px)/1.25 Cinzel,serif;margin-bottom:12px}
+.negra p{color:#c9c6b9}
+.negra ul{margin-top:18px;border-top:1px solid var(--li)}
+.negra li{padding:11px 0;border-bottom:1px solid var(--li);font-size:14.5px}
+
+/* cicatrizadas */
+.cics{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(6px,.8vw,12px)}
+.cic{position:relative;aspect-ratio:9/16;background:#171b18;overflow:hidden}
+.cic video,.cic img{width:100%;height:100%;object-fit:cover}
+.cic figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 12px 12px;text-align:center;font:500 14px/1.3 Cinzel,serif;background:linear-gradient(to top,rgba(8,11,10,.84),transparent)}
+
+/* coberturas */
+.cob{background:var(--bg2)}
+.cob-tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:clamp(22px,3vw,36px)}
+.cob-tabs button{min-height:44px;padding:0 18px;border:1px solid var(--li);font:500 13px/1.25 Montserrat;color:var(--mu);transition:color .3s var(--mol),border-color .3s var(--mol),background .3s var(--mol)}
+.cob-tabs button[aria-pressed=true]{color:#14110a;background:var(--ouro);border-color:var(--ouro)}
+.cob-par{display:grid;grid-template-columns:1fr 1fr;gap:clamp(6px,.8vw,12px);max-width:860px;margin:0 auto}
+.cob-par figure{position:relative}
+.cob-par img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.cob-par figcaption{position:absolute;left:0;top:0;background:rgba(8,11,10,.8);padding:6px 14px;font:500 13px/1.4 Cinzel,serif;color:var(--ouro2)}
+.cob-t{text-align:center;max-width:56ch;margin:20px auto 0;color:var(--mu)}
+.cob-q{text-align:center;font:400 clamp(27px,3vw,36px)/1.3 Escrita,cursive;color:var(--ouro2);margin-top:clamp(26px,3vw,40px);padding-bottom:4px}
+
+/* depoimentos */
+.deps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--li);border-left:1px solid var(--li)}
+.deps blockquote{padding:clamp(22px,2.6vw,36px);border-right:1px solid var(--li);border-bottom:1px solid var(--li);text-align:center}
+.deps p{font-size:15.5px;color:#d6d2c5}
+.deps cite{display:block;font:400 25px/1.3 Escrita,cursive;color:var(--ouro);margin-top:10px;padding-bottom:2px}
+
+/* acao */
+.acao{background:var(--esm-f)}
+.acao .duo{display:grid;grid-template-columns:5fr 6fr;gap:clamp(24px,4vw,64px);align-items:center}
+.acao img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.acao ol{margin-top:20px;border-top:1px solid rgba(220,183,110,.3)}
+.acao li{display:grid;grid-template-columns:1fr;padding:11px 0;border-bottom:1px solid rgba(220,183,110,.3);font-size:15px;color:#d6d8cb}
+.acao .peq{color:#a9b3a7;font-size:13.5px;margin-top:14px}
+.acao .bt{margin-top:22px}
+
+/* orcamento */
+.form{max-width:760px;margin:0 auto;padding:0 var(--marg)}
+.campos{display:grid;grid-template-columns:1fr 1fr;gap:18px 18px}
+.campo{display:block}.campo.l2{grid-column:1/-1}
+.campo span{display:block;font-size:13.5px;color:var(--mu);margin-bottom:6px}
+.campo input,.campo select,.campo textarea{width:100%;min-height:52px;background:var(--bg2);border:1px solid var(--li);border-radius:0;padding:13px 14px;font-size:16px;transition:border-color .3s var(--mol);-webkit-appearance:none;appearance:none}
+.campo textarea{min-height:120px;resize:vertical;line-height:1.5}
+.campo select{background-image:linear-gradient(45deg,transparent 50%,var(--ouro) 50%),linear-gradient(135deg,var(--ouro) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px;background-repeat:no-repeat}
+.campo input:focus,.campo select:focus,.campo textarea:focus{outline:0;border-color:var(--ouro)}
+.ajuda{color:var(--mu);font-size:13.5px;text-align:center;margin-top:12px}
+.erro{color:#e9a48e;font-size:14px;text-align:center;margin:14px 0 0}
+.form .bt{margin-top:22px}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto;padding:0 var(--marg)}
+.faq details{border-bottom:1px solid var(--li)}
+.faq details:first-child{border-top:1px solid var(--li)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:18px;align-items:center;padding:17px 2px;font:500 clamp(16.5px,1.5vw,19px)/1.35 Cinzel,serif}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:9px;height:9px;border-right:1.5px solid var(--ouro);border-bottom:1.5px solid var(--ouro);transform:rotate(45deg);transition:transform .3s var(--mol)}
+.faq details[open] summary::after{transform:rotate(-135deg)}
+.faq p{color:var(--mu);padding:0 2px 18px;font-size:15px}
+
+/* rodape */
+.rodape{border-top:1px solid var(--li);padding:clamp(42px,6vw,72px) var(--marg) 26px;text-align:center}
+.rodape img{height:clamp(96px,10vw,126px);width:auto;margin:0 auto}
+.rodape p{color:var(--mu);font-size:14.5px;margin-top:14px}
+.rodape nav{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:center;margin-top:16px}
+.rodape nav a{padding:6px 0;color:var(--ouro2);font-size:14.5px}
+.rodape small{display:block;margin-top:26px;color:#7f7d70;font-size:12.5px}
+.rodape small a{color:#a9a595}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(7,10,9,.96);display:grid;grid-template-columns:minmax(0,1fr) 340px;overflow:hidden}
+.lb-palco{position:relative;display:flex;align-items:center;justify-content:center;padding:clamp(10px,2vw,28px);min-height:0;min-width:0}
+.lb-palco img{max-width:100%;max-height:calc(100svh - 56px);width:auto;height:auto;object-fit:contain}
+.lb-info{border-left:1px solid var(--li);padding:72px 28px 28px;display:flex;flex-direction:column;justify-content:center;overflow-y:auto}
+.lb-info h3{font:500 26px/1.25 Cinzel,serif}
+.lb-info em{display:block;font:400 26px/1.3 Escrita,cursive;color:var(--ouro);padding-bottom:2px}
+.lb-info p{color:#c9c6b9;margin-top:10px;font-size:15px}
+.lb-vistas{display:flex;gap:8px;margin-top:16px}
+.lb-vistas button{width:56px;height:70px;opacity:.5;transition:opacity .3s var(--mol);overflow:hidden}
+.lb-vistas button[aria-pressed=true]{opacity:1;box-shadow:0 0 0 1px var(--ouro)}
+.lb-vistas img{width:100%;height:100%;object-fit:cover}
+.lb-info .bt{margin-top:22px}
+.lb-f,.lb-ant,.lb-prx{position:absolute;z-index:2;width:48px;height:48px;background:rgba(11,15,14,.8);color:var(--ouro2);display:grid;place-items:center;font-size:22px;line-height:1}
+.lb-f{top:12px;right:12px;position:fixed}
+.lb-ant{left:10px;top:50%;margin-top:-24px}.lb-prx{right:10px;top:50%;margin-top:-24px}
+
+/* entrada */
+.sobe{opacity:0;transform:translateY(22px);transition:opacity .9s var(--mol),transform .9s var(--mol)}
+.sobe.ve{opacity:1;transform:none}
+.flutua{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none}
+
+@media (max-width:1180px){
+  .grade{grid-template-columns:repeat(3,1fr)}
+  .pele-g{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:1023px){
+  html{scroll-padding-top:70px}
+  .topo{height:68px;grid-template-columns:auto 1fr auto}
+  .nav{display:none}
+  .marca img{height:46px}
+  .bt-menu{display:block}
+  .hero{height:auto;max-height:none;min-height:100svh;display:flex;flex-direction:column;padding:82px 0 clamp(12px,2.4vh,24px)}
+  .hero-fundo{position:relative;inset:auto;order:2;flex:1 1 auto;min-height:220px}
+  .hero-lado{position:static;transform:none;width:auto;max-width:none;text-align:center;padding:0 var(--marg);margin:0}
+  .hero-lado.e{display:none}.hero-lado.d{order:4}
+  .hero-tit{display:inline;font-size:clamp(25px,7.3vw,44px);line-height:1.2}
+  .hero-junto{order:1;display:block;text-align:center;font:500 clamp(25px,7.3vw,44px)/1.2 Cinzel,serif;text-wrap:balance;padding:0 var(--marg)}
+  .hero-lado.e .hero-txt{display:none}
+  .hero-lado.d .hero-tit{display:none}
+  .hero-lado.d .hero-txt{margin-top:0;font-size:15px}
+  .hero-bts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+  .hero-bts .bt{margin:0;max-width:none;padding:0 8px;font-size:12.5px;letter-spacing:.06em}
+  .hero-rod{position:static;order:3;padding:0 var(--marg) 10px;font-size:12.5px}
+  .hero-rod b{font-size:19px}
+  .hero-fundo .vd,.hero-fundo img.pos{top:50%;transform:translate(-50%,-50%);height:100%;width:auto;max-width:100%;aspect-ratio:1}
+  .sobre .duo,.acao .duo{grid-template-columns:1fr}
+  .negra{grid-template-columns:1fr 1fr}
+  .lb{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto}
+  .lb-info{border-left:0;border-top:1px solid var(--li);padding:14px var(--marg) 16px;display:block}
+  .lb-info h3{font-size:21px}.lb-info em{display:none}.lb-info p{font-size:14px;margin-top:4px}
+  .lb-vistas{margin-top:10px}.lb-vistas button{width:44px;height:55px}
+  .lb-info .bt{margin-top:12px;width:100%}
+  .lb-palco img{max-height:100%}
+}
+@media (min-width:1024px){.hero-junto{display:none}.hero-bts{display:contents}}
+@media (max-width:760px){
+  .prova ul{grid-template-columns:1fr 1fr}
+  .prova li:nth-child(3){border-left:0}
+  .prova li:nth-child(n+3){border-top:1px solid var(--li)}
+  .grade{grid-template-columns:1fr 1fr}
+  .etapas{grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .etapa h3{font-size:15.5px;margin-top:12px}.etapa em{font-size:20px}.etapa p{font-size:12.5px;line-height:1.45}
+  .cics{grid-template-columns:1fr 1fr}
+  .deps{grid-template-columns:1fr}
+  .negra{grid-template-columns:1fr}
+  .campos{grid-template-columns:1fr}
+  .cob-tabs{display:grid;grid-template-columns:1fr}
+  .acao .duo>div,.sobre .txt,.negra>div{text-align:center}
+  .acao .lead{margin-left:auto!important}
+  .linhas li{text-align:left}
+  .filtros{display:grid;grid-template-columns:repeat(3,1fr);padding:0 12px}
+  .filtros button.tudo{grid-column:1/-1}
+  .filtros button{padding:7px 2px}
+  .peca span{display:none}
+  .pele-g li{padding:16px 12px}.pele-g p{font-size:13.5px}
+  .linhas li{font-size:14px}
+}
+@media (max-width:520px){
+  .etapas{grid-template-columns:1fr 1fr 1fr}
+  .etapa p{display:none}
+  .etapa h3{font-size:13.5px}
+}
+@media (max-height:520px) and (orientation:landscape){
+  .hero{display:block;height:auto;min-height:520px;padding:0}
+  .hero-fundo{position:absolute;inset:60px 0 0 0}
+  .hero-junto{display:none}
+  .hero-rod{display:none}
+  .hero-lado{position:absolute;top:calc(50% + 30px);transform:translateY(-50%);padding:0;width:calc(50% - 190px);max-width:300px}
+  .hero-lado.e{display:block;right:calc(50% + 180px);left:auto;text-align:right}
+  .hero-lado.d{left:calc(50% + 180px);text-align:left}
+  .hero-lado.e .hero-txt{display:none}
+  .hero-lado .hero-tit,.hero-lado.d .hero-tit{display:block;font-size:24px}
+  .hero-lado.d .hero-txt{display:none}
+  .hero-bts{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.sobe{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="saltar" href="#conteudo">Ir para o conteúdo</a>
+<header class="topo" id="topo">
+  <nav class="nav" aria-label="Principal"><a href="#tatuagens">Tatuagens</a><a href="#processo">Processo</a><a href="#sobre">A May</a></nav>
+  <a class="marca" href="#inicio" aria-label="May Tattoo Artist, início"><img src="assets/img/logo-p.webp" alt="May Tattoo Artist" width="420" height="218"></a>
+  <nav class="nav d" aria-label="Secundária"><a href="#cicatrizadas">Cicatrizadas</a><a href="#coberturas">Coberturas</a><a href="#orcamento">Orçamento</a></nav>
+  <button class="bt-menu" id="btMenu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+</header>
+<div class="menu" id="menu" hidden>
+  <a href="#tatuagens">Tatuagens</a><a href="#processo">Processo</a><a href="#sobre">A May</a><a href="#cicatrizadas">Cicatrizadas</a><a href="#coberturas">Coberturas</a><a href="#faq">Dúvidas</a>
+  <a class="bt" href="#orcamento">Pedir orçamento</a>
+</div>
+<main id="conteudo">
+<section class="hero" id="inicio" aria-label="Apresentação">
+  <h1 class="sr">Transformo sentimentos em arte na pele. May, tatuadora em Feira de Santana, BA.</h1>
+  <div class="hero-lado e" aria-hidden="false">
+    <span class="hero-tit" aria-hidden="true">Transformo<br>sentimentos</span>
+    <p class="hero-txt">Fine line, floral a mão livre e homenagens, desenhados para você e para a sua pele.</p>
+    <a class="bt" href="#orcamento" data-d>Pedir orçamento</a>
+  </div>
+  <div class="hero-junto" aria-hidden="true">Transformo sentimentos em arte na pele</div>
+  <p class="hero-rod mob" id="heroRod" aria-live="off"><b id="heroPal">saudade</b><span id="heroLeg">Tatuagem real: homenagem ao pai</span></p>
+  <div class="hero-fundo" id="heroFundo"><img class="pos" id="heroPos" src="assets/img/hero/poster.webp" alt="Tatuagem de borboleta da May desenhada em ouro" width="1000" height="1000" hidden></div>
+  <div class="hero-lado d">
+    <span class="hero-tit" aria-hidden="true">em arte<br>na pele</span>
+    <p class="hero-txt">Atendimento privado no Duo Ink Tattoo Studio, em Feira de Santana, BA. Apenas com agendamento.</p>
+    <div class="hero-bts"><a class="bt" href="#orcamento" data-m hidden>Pedir orçamento</a><a class="bt fio" href="#tatuagens">Ver tatuagens</a></div>
+  </div>
+</section>
+
+<section class="prova" aria-label="Em números">
+  <ul>
+    <li><b>43,8 mil</b><span>pessoas acompanham no Instagram</span></li>
+    <li><b>Desde 2017</b><span>publicando tatuagens</span></li>
+    <li><b>Fine line</b><span>categoria em que foi premiada</span></li>
+    <li><b>Feira de Santana</b><span>com clientes de Salvador a Aracaju</span></li>
+  </ul>
+</section>
+
+<section id="tatuagens" aria-labelledby="tTat">
+  <div class="cab sobe"><span class="olho">o que você quer</span><h2 class="h2" id="tTat">eternizar?</h2><p class="lead">Aqui as tatuagens não estão separadas por estilo. Estão pelo sentimento que cada uma carrega.</p></div>
+  <div class="filtros" id="filtros" role="group" aria-label="Filtrar por sentimento"><button class="tudo" type="button" data-f="tudo" aria-pressed="true">tudo</button><button type="button" data-f="amor" aria-pressed="false">amor</button><button type="button" data-f="saudade" aria-pressed="false">saudade</button><button type="button" data-f="fe" aria-pressed="false">fé</button><button type="button" data-f="recomeco" aria-pressed="false">recomeço</button><button type="button" data-f="forca" aria-pressed="false">força</button><button type="button" data-f="delicadeza" aria-pressed="false">delicadeza</button></div>
+  <div class="caixa"><div class="grade" id="grade"><button class="peca" type="button" data-i="0" data-s="recomeco" aria-label="Abrir Borboleta e hibisco" style="background:url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBWF662f4CGpt459TlHbyRRAAP7XbO8xtrG1eaSc3k8oyITnG1Kj+mOXtZ2yJ0ccJZyLC3HG3iaH3lnwXaAw8bPZSXict4FvQjc4JTqIOCFbkNPN3Rx1XkqW+MNXpbmXVi/gUYm4aAAA) center/cover"><img src="assets/img/p/borb-hib.webp" alt="Tatuagem: Borboleta e hibisco" width="640" height="800" loading="lazy" draggable="false"><span>Borboleta e hibisco</span></button><button class="peca" type="button" data-i="1" data-s="amor" aria-label="Abrir Pezinho do Calebe" style="background:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOmUI7LBJgyCMtPqx665ZzwAM4auFeVWrewK3jz4vss3MFKwubuP1Hh0J8DIGIQrGRI4UeLe0QECmxw4xpWwRyalhuNWgnLZxPLD4wXPGmuUAA=) center/cover"><img src="assets/img/p/pezinho.webp" alt="Tatuagem: Pezinho do Calebe" width="640" height="800" loading="lazy" draggable="false"><span>Pezinho do Calebe</span></button><button class="peca" type="button" data-i="2" data-s="delicadeza" aria-label="Abrir Ramo a mão livre" style="background:url(data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOmUGMEz/gODl8PskWPWEZbKa0AANujWxtBnhwnrcd54RAMlBkEZRn1pbsdk7LrcHB5Q3QX1NnceGyRgAMaME8P0aOwL6t6wEQZfJ2TJWOzfEXGMaAA) center/cover"><img src="assets/img/p/ramo-livre.webp" alt="Tatuagem: Ramo a mão livre" width="640" height="800" loading="lazy" draggable="false"><span>Ramo a mão livre</span></button><button class="peca" type="button" data-i="3" data-s="fe" aria-label="Abrir Jesus" style="background:url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdMoMlwb+Ak29ygTFL5JeFEewA/uhsoSXWmvNAs+9AAuNpRq3E1xb2kU18BXTpEvUBFx+MlsotNudUbH9gBBd4R9gduqz9P/z4R5Od27kzupVtfTMlnDFxWJiX+kAspJ+7gaAigqJCm1InMiQlZei9JEtKSTDSSk63DkXYAA==) center/cover"><img src="assets/img/p/jesus.webp" alt="Tatuagem: Jesus" width="640" height="800" loading="lazy" draggable="false"><span>Jesus</span></button><button class="peca" type="button" data-i="4" data-s="forca" aria-label="Abrir Dois dragões nas costas" style="background:url(data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZACdIDZtwAzyYmjXe0gcQ5wBJUdsAP6yEzWRB6XYACntO4wadtFLoTKbxd3Tx1UwpVyF+HdKjhD3pah7ah4EtLwHYndDSmiCchScRWExWHEHrxna0met/n1m5MhwBZUlfxmgScrQX5/ACwAAAA==) center/cover"><img src="assets/img/p/dragoes.webp" alt="Tatuagem: Dois dragões nas costas" width="640" height="800" loading="lazy" draggable="false"><span>Dois dragões nas costas</span></button><button class="peca" type="button" data-i="5" data-s="saudade" aria-label="Abrir Asas para o pai" style="background:url(data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZgCdMoAC8bES7Vi+KmQSAAD+4KL/nhy9H7N/yurYmSbnLrKcPeMLSXdfiOu+gFEpT/Y4fu3opoXD7642TG21G5wZb2f3tvY+pc6EKAvAAA==) center/cover"><img src="assets/img/p/pai.webp" alt="Tatuagem: Asas para o pai" width="640" height="800" loading="lazy" draggable="false"><span>Asas para o pai</span></button><button class="peca" type="button" data-i="6" data-s="fe" aria-label="Abrir Sol, Lua e feminino" style="background:url(data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JaACdACNXy+rjX4sqxppsRbZzAAD+tRpk/l/OyIPcAS99Jc4cQpAEWtF/TpffuBO9ryDCd6zMCR9bucVE4RtcejpDkgA0fF5iJfvmaI3D0evyv/LBoLHptcUUgjllgAA=) center/cover"><img src="assets/img/p/sol-lua.webp" alt="Tatuagem: Sol, Lua e feminino" width="640" height="800" loading="lazy" draggable="false"><span>Sol, Lua e feminino</span></button><button class="peca" type="button" data-i="7" data-s="amor" aria-label="Abrir Mãe e filho" style="background:url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOmUABwOwlFwdeSpxgu7Hz3gAD+0mu1VP8CWejWn1Ey5Fnr8VfdTdSAACUP5QadxceMxKl5L2c/FBzfu0T+85B/QVI2bARDDsI6ge1uYpboukCGudup/0AAAA==) center/cover"><img src="assets/img/p/mae-filho.webp" alt="Tatuagem: Mãe e filho" width="640" height="800" loading="lazy" draggable="false"><span>Mãe e filho</span></button><button class="peca" type="button" data-i="8" data-s="recomeco" aria-label="Abrir Fênix" style="background:url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZgCdMoMYOT+AasIuXj3zsYpjWYAA/Y5NUcRGx2dldhLmuaagfl3AJNJJ3Rpl/X+wwSSmmo9ynVPkvxpfknd+GXu76fDls9S7DhoaMvBINhOGSnWtkzcG3dObVrgA) center/cover"><img src="assets/img/p/fenix.webp" alt="Tatuagem: Fênix" width="640" height="800" loading="lazy" draggable="false"><span>Fênix</span></button><button class="peca" type="button" data-i="9" data-s="delicadeza" aria-label="Abrir Água-viva" style="background:url(data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JagCw7CFU845d23ejRrHAAP7v0MqMHXPKmBhSWRakkKNpkTlCrZe/JnPYKbBWWWSFqrKmWG7RgZxQDxZ8C5Bp+/43z9/RFN+zfr56cEPpgyC5GJImBnjRrI9eLq9ucjLZZhGnQ31wAA==) center/cover"><img src="assets/img/p/agua-viva.webp" alt="Tatuagem: Água-viva" width="640" height="800" loading="lazy" draggable="false"><span>Água-viva</span></button><button class="peca" type="button" data-i="10" data-s="forca" aria-label="Abrir Leão ornamental" style="background:url(data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JZgCdABufMrJpwyZulAAA+9OUxFi1/8dP0+dLlI5w8h+igB6mnMwZVD0RpaWzhZuRc1096R3GomazuxVrIKE1/7v3xG8g8o+wqrmDA3vq5bzk/t6v0nqqx6sXqVPyGQcLFY6qdPrzUBH9iWYh4Rht/nFUQAAA) center/cover"><img src="assets/img/p/leao-orn.webp" alt="Tatuagem: Leão ornamental" width="640" height="800" loading="lazy" draggable="false"><span>Leão ornamental</span></button><button class="peca" type="button" data-i="11" data-s="saudade" aria-label="Abrir Coração anatômico" style="background:url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZACdMoR3JoLz/FJIDvULQXp3aVAXYQgA/tM+Ld4oBliQII7xNi3shXUTFpqlcJQDBjeIQlU+O8fFe28qodkEtXhbrqkaeqw4EXPR8uLo5SAI2ZMjOW/6QkbHKCBJQ2k2e64lnkLIAAAA) center/cover"><img src="assets/img/p/coracao.webp" alt="Tatuagem: Coração anatômico" width="640" height="800" loading="lazy" draggable="false"><span>Coração anatômico</span></button><button class="peca" type="button" data-i="12" data-s="recomeco" aria-label="Abrir Lírio na coluna" style="background:url(data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZACdMoR4PoADyyv/t4ymiRFOsAD+08HP68oOrTJxca9nOxzlMcSeU0uVupJz3nYG27g6/MejPZx0JcHH28HPvNd824BE8/SJYfUiYa/FnCKhzZsAsCiqJv9kE9L3EEoP+xQFbZ2dpujQzburfIkLh4qYcPCgAAA=) center/cover"><img src="assets/img/p/lirio.webp" alt="Tatuagem: Lírio na coluna" width="640" height="800" loading="lazy" draggable="false"><span>Lírio na coluna</span></button><button class="peca" type="button" data-i="13" data-s="amor" aria-label="Abrir Benjamin" style="background:url(data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwBACdASoQABQAPu1kqU2ppaQiMAgBMB2JZACdL0iBZTwhi23PRIxAQwAA/pP6twdWeJ5tqUlT/3q4AIWlwqXvns0YuWrd2r/e2O95DHQU3eJI6ujAAA==) center/cover"><img src="assets/img/p/benjamin.webp" alt="Tatuagem: Benjamin" width="640" height="800" loading="lazy" draggable="false"><span>Benjamin</span></button><button class="peca" type="button" data-i="14" data-s="fe" aria-label="Abrir Nossa Senhora" style="background:url(data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JbACdMoRwACBFaaQhPAa0h2AAx5AA5YTzkkB2CT4sG1PMz630wXm71BPZKvcjHPsOjE0vpDk4fF1VqSYRO91BF6fL02NxX5A2svMRa1R8sbfICg0dqRfFb89yUTl972P9NfN7H8WAAA==) center/cover"><img src="assets/img/p/n-senhora.webp" alt="Tatuagem: Nossa Senhora" width="640" height="800" loading="lazy" draggable="false"><span>Nossa Senhora</span></button><button class="peca" type="button" data-i="15" data-s="saudade" aria-label="Abrir Ciclo da borboleta" style="background:url(data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOkAik/wIBbyDNc00NxIpKAAP3gWCT36jgvuADatA+0hJf5lZT6G6V1KTFr3o+cNFaJYXWKHkd36wmlXALaYfPxoQQ+UCPYO6gO/NDtGZC9PefAAA==) center/cover"><img src="assets/img/p/ciclo.webp" alt="Tatuagem: Ciclo da borboleta" width="640" height="800" loading="lazy" draggable="false"><span>Ciclo da borboleta</span></button><button class="peca" type="button" data-i="16" data-s="delicadeza" aria-label="Abrir Raminho" style="background:url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOmUABwbE2JHZg4NIwNAAD+5GgigRRkLBJ0BWSgzEFu3rxAp2yhrMZC6NceiC5j1EkzIjc9ZeFQhbgcezh6T795gKME2w/JhhQWR9XlCOZVT7WG3+Bmb2OA4AvCKau3Ot2MTedbsAAA) center/cover"><img src="assets/img/p/raminho.webp" alt="Tatuagem: Raminho" width="640" height="800" loading="lazy" draggable="false"><span>Raminho</span></button><button class="peca" type="button" data-i="17" data-s="forca" aria-label="Abrir Dragão" style="background:url(data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JbACdMoADAXi0ApZdc3ntgAD+T1QQ2MR86eaTdhfndNpnqornmlUgZtLNpU7CAp9EIRLg2ptHVkKdDZs5bUNeIG2G3AgTLzXYwnhJPRK+FOEX/0U9kUbPNfL+mMy1BLyEy1vjHwbbCwGOmJRIg7KNz7Z2jQ9YKlfnnjSKvArpMGSoAAA=) center/cover"><img src="assets/img/p/dragao.webp" alt="Tatuagem: Dragão" width="640" height="800" loading="lazy" draggable="false"><span>Dragão</span></button><button class="peca" type="button" data-i="18" data-s="recomeco" aria-label="Abrir Borboleta na mão" style="background:url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdMoMjiYAAPiwIdf23WHUPhXgA/mNVj3DwWz/S2kAu/iLijOuBYyn2eGmHJMQTBcV668Fty5ly/8Ppm/dIU/ycif1iFBOC9GV7bSkuaJAnDK3qRKyGXAr7AAAA) center/cover"><img src="assets/img/p/borb-mao.webp" alt="Tatuagem: Borboleta na mão" width="640" height="800" loading="lazy" draggable="false"><span>Borboleta na mão</span></button><button class="peca" type="button" data-i="19" data-s="delicadeza" aria-label="Abrir Floral nas costas" style="background:url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZgCdICXBdp/jqu0pZlcJgAD+8zW3I1D9zA9UTk9+qIIz7oTHUzSDFlsnh3zjd7iTwUAuMWDYR2QXqXuwY7C2Va/WfTOd+3gMQ+yZhEgm2TdWX1DlhZQCZKJ2+6WjZhY6GdSa3Y2lAAAA) center/cover"><img src="assets/img/p/floral-cost.webp" alt="Tatuagem: Floral nas costas" width="640" height="800" loading="lazy" draggable="false"><span>Floral nas costas</span></button><button class="peca" type="button" data-i="20" data-s="fe" aria-label="Abrir Lótus e Inefável" style="background:url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdMoMYJgzAeOAD/IPXjdG9gAD+uBK2q+5o9FCob5bPZ5l+2bceYeLnrGogSj1NooG74RsVBccyCURjf6ihPUrLbClYicqrOKWIAnHnypeQDNNtxKswn3QrRq6uVlx86JRjUtDGmHAA) center/cover"><img src="assets/img/p/lotus.webp" alt="Tatuagem: Lótus e Inefável" width="640" height="800" loading="lazy" draggable="false"><span>Lótus e Inefável</span></button><button class="peca" type="button" data-i="21" data-s="forca" aria-label="Abrir Cobra" style="background:url(data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBQCdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdMoR3HZ/mAA7ABwO/9TdgJThTo8wAAPa7EWHmgjE08FgqeVrKTsPdzAcAuRsLTWIT5ugAMI6p9fa+atWMrx4z5FiEdwzFs8IL4txhHUr7gpv1Vc2Ip5KML35g/SBmqtNhfV02mj25VZp5sPnjvYoXHTq9n3TKEVKZeufZ6apQBW/PwAAA) center/cover"><img src="assets/img/p/cobra.webp" alt="Tatuagem: Cobra" width="640" height="800" loading="lazy" draggable="false"><span>Cobra</span></button><button class="peca" type="button" data-i="22" data-s="recomeco" aria-label="Abrir Tudo tem seu tempo" style="background:url(data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdMoMYOT+Ac/ZFqcvv3W1SAAD+6DxC/EDFLPeQ3t1QW8XmptP4iOdRs0zV2oxvvBvmhX7YQCUCYDDTmYDXKA1NU+ZxP+RW1Z8fMLxjVA4UHVEZ61ijErD1AyZl4/+Y+AzR3+1EZwAAAAA=) center/cover"><img src="assets/img/p/tudo-tempo.webp" alt="Tatuagem: Tudo tem seu tempo" width="640" height="800" loading="lazy" draggable="false"><span>Tudo tem seu tempo</span></button><button class="peca" type="button" data-i="23" data-s="delicadeza" aria-label="Abrir Lírios e borboletas" style="background:url(data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JbACdMoACbPlli2p8ZgEzvAD+8eCXiwqa7xSj6axWf6MBECW12Ih5zPG5PaX6drJmG3EFdL/FgiqpQMUwDHSOTCAhgqBGPk1ZCr04QrS25jHozM6C4Qd2fZLIKYDLNW6dvY7tDSf2qKW5Z6CboVHxpQAAAA==) center/cover"><img src="assets/img/p/lirios.webp" alt="Tatuagem: Lírios e borboletas" width="640" height="800" loading="lazy" draggable="false"><span>Lírios e borboletas</span></button><button class="peca" type="button" data-i="24" data-s="amor" aria-label="Abrir Leoa com filhotes" style="background:url(data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZgCw7YxEeZq4gmYeXS4cgAD+vltqMkgc+ZaaER2qjRP0b6lXYfPQdwb2Jm1MJhzKbXsFeVHMlN2VFfCNpQjEGBoaKfvoBCIhQYrjSj49iVDPriCi6tI9Ii+HdkN7aeno/oXK9ZUpgZj/GJ/SXa9MOy6oa3aQr0SAAA==) center/cover"><img src="assets/img/p/leoa.webp" alt="Tatuagem: Leoa com filhotes" width="640" height="800" loading="lazy" draggable="false"><span>Leoa com filhotes</span></button><button class="peca" type="button" data-i="25" data-s="forca" aria-label="Abrir Elefante e flores" style="background:url(data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JbACdMoR3JoADUaX0CFFOu6yvX/kAAP7D/91kG2UyLSLZ73vlzvJWgSE25U+bg5Jv8tPQz1RvEJrIgRrls5sP8cWb4xXRO9dhmpRs6iYoTgzS11AbWGPbmQXW6utIYkOpl4T73R4azBLG5+39I5uTuMYugAAA) center/cover"><img src="assets/img/p/elefante.webp" alt="Tatuagem: Elefante e flores" width="640" height="800" loading="lazy" draggable="false"><span>Elefante e flores</span></button><button class="peca" type="button" data-i="26" data-s="fe" aria-label="Abrir Ornamental" style="background:url(data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZgCdMoABnY8JQpQmvCZ3QADfdFnGrUTyVWgKw6xXxZU72Hf8xp+LyaIFjKoNdLcKfWs5vJE4iwBeeHcsR9chjK9CZ3CyqnuaswVDZT5LbTkgI2Hwxih03p2kfuAAAAA=) center/cover"><img src="assets/img/p/ornamental.webp" alt="Tatuagem: Ornamental" width="640" height="800" loading="lazy" draggable="false"><span>Ornamental</span></button><button class="peca" type="button" data-i="27" data-s="delicadeza" aria-label="Abrir Tartaruga" style="background:url(data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JaACw7B9wGXWyv0/oK09QH4AAAPzsToo8IMJHg5lWnK0cHnF9IdKo5BmL3Iov/efZjEuSLTEvV2uviyUmuKkx4SqPWxjYwEamjF8IIWjvdlXfuWuZfn6LalfvpJzHwHZZvH+BLb89QPxK6KqxF3ZkkjuRAUDBD8t9UBw/Jvv4N+JwD5cAf8+AAAA=) center/cover"><img src="assets/img/p/tartaruga.webp" alt="Tatuagem: Tartaruga" width="640" height="800" loading="lazy" draggable="false"><span>Tartaruga</span></button><button class="peca" type="button" data-i="28" data-s="recomeco" aria-label="Abrir Beija-flor" style="background:url(data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAACQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JbACdMoR3AB4QSFCFC64pdXyhTgAA/q+bUfQz2+/buMYVR4AW+Wxo333cx2zkIN1RlDSylhEOLAG62nqNFhryTHcHz+MjziEfZFwWJZni3zWws3iK0HfUbjgYhmANAAA=) center/cover"><img src="assets/img/p/beija-flor.webp" alt="Tatuagem: Beija-flor" width="640" height="800" loading="lazy" draggable="false"><span>Beija-flor</span></button><button class="peca" type="button" data-i="29" data-s="delicadeza" aria-label="Abrir Floral e ornamental" style="background:url(data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JbACdMoMjbEuoj3/sLP128wpL5igA/ugpKO75gm8mjq4Wu0Asap7u9ZFksqPG9aYXU8gIjfoY5nthSJ8A9XfL3DecKmrPoPQ09ciqVoqWylLZGP09euhrkSn6Zty3NWUom2wYiz4yUIkhYigAAA==) center/cover"><img src="assets/img/p/floral-c.webp" alt="Tatuagem: Floral e ornamental" width="640" height="800" loading="lazy" draggable="false"><span>Floral e ornamental</span></button><button class="peca" type="button" data-i="30" data-s="forca" aria-label="Abrir Leoa com flores" style="background:url(data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQAwCdASoQABQAPu1iqU2ppaQiMAgBMB2JYwCdMoC2AAQTqXIVuwAA/grCWJpyZMeghwO5VC+w2PfpF/XtpK+Z35q4exrfXxIgB+pae4G3q0lYAmCTlqw79RfhjzZ9NeO6Iu6+3LO/Qhh+ayIrvzCY7ViEI6Pb/iWm55a8EUnNZ3Y7hEeUW6H/OAA=) center/cover"><img src="assets/img/p/leoa-flor.webp" alt="Tatuagem: Leoa com flores" width="640" height="800" loading="lazy" draggable="false"><span>Leoa com flores</span></button><button class="peca" type="button" data-i="31" data-s="saudade" aria-label="Abrir Buquê das amigas" style="background:url(data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JbACdMoMYJn/AOrTXwzClctsyFAD+cixHc2NJ7z4g2VJt6vvxo4dkFDayp6srvGVsWxY/8lUD+gCLyFsI4R4cWAI/L9Ou5e1VkySoOz/v0MGgW9o4Ycbh4ZK/+zMW5UJp87+/MGo0LINudWEEkvQXWYZ8t9AA) center/cover"><img src="assets/img/p/amigas.webp" alt="Tatuagem: Buquê das amigas" width="640" height="800" loading="lazy" draggable="false"><span>Buquê das amigas</span></button></div></div>
+  <div class="mais"><button class="bt fio" id="verMais" type="button">Ver todas</button></div>
+</section>
+
+<section class="meta" id="processo" aria-labelledby="tMeta">
+  <div class="cab sobe"><span class="olho">metamorfose</span><h2 class="h2" id="tMeta">Toda tatuagem passa por três fases</h2><p class="lead">Larva, casulo e borboleta. O ciclo que a May mais tatua é o mesmo que cada arte percorre até chegar em você.</p></div>
+  <div class="caixa"><div class="etapas">
+    <article class="etapa sobe"><video class="auto" muted playsinline loop preload="none" poster="assets/img/etapa-ideia.jpg" aria-label="A borboleta sendo desenhada no tablet"><source src="assets/video/etapa-ideia.mp4" type="video/mp4"></video><em>lagarta</em><h3>A ideia</h3><p>Você conta a história. A May desenha com antecedência e mostra o esboço para você opinar.</p></article>
+    <article class="etapa sobe"><video class="auto" muted playsinline loop preload="none" poster="assets/img/etapa-criacao.jpg" aria-label="A May tatuando a borboleta"><source src="assets/video/etapa-criacao.mp4" type="video/mp4"></video><em>casulo</em><h3>A criação</h3><p>Decalque ou mão livre com canetinhas, sempre seguindo o caimento do seu corpo.</p></article>
+    <article class="etapa sobe"><video class="auto" muted playsinline loop preload="none" poster="assets/img/etapa-pele.jpg" aria-label="Tatuagem de borboleta e flores pronta no antebraço"><source src="assets/video/etapa-pele.mp4" type="video/mp4"></video><em>borboleta</em><h3>A pele</h3><p>A arte vai com você. Uma tatuagem é como uma joia que você sempre carregará.</p></article>
+  </div></div>
+  <blockquote class="cita sobe"><p>Eu gosto de trabalhar com detalhes que quase ninguém percebe.</p><cite>May</cite></blockquote>
+</section>
+
+<section class="sobre" id="sobre" aria-labelledby="tSobre">
+  <div class="caixa"><div class="duo">
+    <figure class="sobe"><img src="assets/img/duo.webp" alt="May e seu parceiro em retrato preto e branco, com o logo do Duo Ink" width="1280" height="1600" loading="lazy"></figure>
+    <div class="txt sobe">
+      <span class="olho">Richaelly Mayara</span><h2 class="h2" id="tSobre">Pode chamar de May</h2>
+      <p style="margin-top:16px">Desde 2017 ela transforma o que as pessoas sentem em traço fino. Em 2023 foi premiada na categoria fine line. Hoje divide o Duo Ink Tattoo Studio com o companheiro: um casal apaixonado pela arte, com atendimento privado e exclusivo.</p>
+      <p>Em 2025 nasceu a Luísa Violeta, e todo pedido de homenagem ganhou outro peso: "Hoje quando eu faço uma tatuagem em homenagem a um filho, eu sei o quanto de amor, de entrega, de espera, de ansiedade estão contidos."</p>
+      <ul class="linhas"><li><span>Estúdio</span><span>Duo Ink Tattoo Studio</span></li><li><span>Cidade</span><span>Feira de Santana, BA</span></li><li><span>Atendimento</span><span>Apenas com agendamento</span></li></ul>
+    </div>
+  </div></div>
+</section>
+
+<section class="pele" id="pele" aria-labelledby="tPele">
+  <div class="cab sobe"><span class="olho">leitura de pele</span><h2 class="h2" id="tPele">Cada pele recebe a tinta de um jeito</h2><p class="lead">Profundidade, técnica, tamanho e agulha mudam conforme a sua pele, e até conforme a região do corpo. Tatuagem não é só pegar a máquina e riscar.</p></div>
+  <div class="caixa">
+    <ul class="pele-g sobe">
+      <li><h3>Normal</h3><p>Equilíbrio ideal. Segura bem o pigmento e cicatriza de forma mais estável.</p></li>
+      <li><h3>Oleosa</h3><p>Mais sebo na pele. Pode haver leve expansão do traço com o tempo.</p></li>
+      <li><h3>Seca</h3><p>Mais difícil de pigmentar. Pede mais hidratação no pós.</p></li>
+      <li><h3>Mista ou sensível</h3><p>Pode reagir com mais inflamação. Requer técnica e profundidade controladas.</p></li>
+    </ul>
+    <div class="negra">
+      <img class="sobe" src="assets/img/o/191_0.webp" alt="Leoa com filhotes em pele negra, primeira tatuagem da cliente aos 57 anos" width="1080" height="1350" loading="lazy">
+      <div class="sobe"><h3>Pele negra pede outro desenho</h3><p>Depois de cicatrizar, a melanina fica como uma película sobre a arte. Por isso o desenho muda. A delicadeza não depende da agulha fina: "é o conjunto da obra que dá essa impressão".</p>
+        <ul><li>Arte mais aberta, com menos sombras</li><li>Mais contraste entre as áreas</li><li>Traços que não fiquem finos demais</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="cicatrizadas" aria-labelledby="tCic">
+  <div class="cab sobe"><span class="olho">depois do tempo</span><h2 class="h2" id="tCic">A prova é a tatuagem cicatrizada</h2><p class="lead">Foto de tatuagem recém-feita qualquer um posta. Aqui estão as que já passaram pelo tempo.</p></div>
+  <div class="caixa"><div class="cics">
+    <figure class="cic sobe"><video class="auto" muted playsinline loop preload="none" poster="assets/img/cic-30.jpg" aria-label="Tatuagem com 30 dias"><source src="assets/video/cic-30.mp4" type="video/mp4"></video></figure>
+    <figure class="cic sobe"><video class="auto" muted playsinline loop preload="none" poster="assets/img/cic-leao.jpg" aria-label="Leão com flores cicatrizado"><source src="assets/video/cic-leao.mp4" type="video/mp4"></video></figure>
+    <figure class="cic sobe"><img src="assets/img/cic-1ano.webp" alt="Tatuagem cicatrizada há 1 ano" width="540" height="960" loading="lazy"></figure>
+    <figure class="cic sobe"><img src="assets/img/cic-2anos.webp" alt="Tatuagem cicatrizada há 2 anos" width="540" height="960" loading="lazy"></figure>
+  </div></div>
+</section>
+
+<section class="cob" id="coberturas" aria-labelledby="tCob">
+  <div class="cab sobe"><span class="olho">cobertura</span><h2 class="h2" id="tCob">Uma tatuagem que faria mesmo sem ser cobertura</h2><p class="lead">Para trabalhar com cobertura é preciso agradar o cliente duas vezes: esconder o que incomoda e entregar uma arte nova de verdade.</p></div>
+  <div class="caixa">
+    <div class="cob-tabs" id="cobTabs" role="group" aria-label="Escolher cobertura"><button type="button" aria-pressed="true">Borboleta que virou floral</button><button type="button" aria-pressed="false">Escrita que virou corvo</button><button type="button" aria-pressed="false">Escrita que virou bracelete</button></div>
+    <div class="cob-par"><figure><img id="cobA" src="assets/img/c/ruth-a.webp" alt="Antes" width="800" height="1000" loading="lazy"><figcaption>Antes</figcaption></figure><figure><img id="cobD" src="assets/img/c/ruth-d.webp" alt="Depois" width="800" height="1000" loading="lazy"><figcaption>Depois</figcaption></figure></div>
+    <p class="cob-t" id="cobT">A tatuagem antiga não era o estilo que ela queria. A resposta foi uma arte nova, em traços finos.</p>
+    <p class="cob-q">Não é apenas uma cobertura, é uma nova história.</p>
+  </div>
+</section>
+
+<section id="depoimentos" aria-labelledby="tDep">
+  <div class="cab sobe"><span class="olho">quem já foi</span><h2 class="h2" id="tDep">Palavras de quem carrega</h2></div>
+  <div class="caixa"><div class="deps sobe">
+    <blockquote><p>"É visível que seu trabalho extrapola as questões do dinheiro, você realmente tem amor pelo que faz."</p><cite>Alessandra</cite></blockquote>
+    <blockquote><p>"Eu tô simplesmente apaixonada, mais uma vez você superou minhas expectativas."</p><cite>Ellen</cite></blockquote>
+    <blockquote><p>"Tatuagem perfeita, traço fino e seu atendimento impecável, voltarei mais vezes."</p><cite>Ediane</cite></blockquote>
+  </div></div>
+</section>
+
+<section class="acao" id="acao" aria-labelledby="tAcao">
+  <div class="caixa"><div class="duo">
+    <img class="sobe" src="assets/img/acao.webp" alt="Tatuagem minimalista de flor com a frase bem me quero" width="1080" height="1350" loading="lazy">
+    <div class="sobe">
+      <span class="olho">até 20 de dezembro</span><h2 class="h2" id="tAcao">Ação Solidária de Natal</h2>
+      <p class="lead" style="margin-left:0">Sua tatuagem pode alimentar outra família, e ainda vem acompanhada de outra tatuagem, por conta da May.</p>
+      <ol><li>Agende uma tatuagem de qualquer valor entre 01/11 e 20/12</li><li>Leve 3 alimentos distintos de 1 kg no dia da sessão</li><li>Ganhe uma minimalista de até 7 cm, feita no mesmo dia, em você</li></ol>
+      <p class="peq">A minimalista é em traços pretos, desenho ou escrita. Não vale colorido nem realismo e não é transferível.</p>
+      <a class="bt" href="#orcamento" data-acao>Quero participar</a>
+    </div>
+  </div></div>
+</section>
+
+<section id="orcamento" aria-labelledby="tOrc">
+  <div class="cab sobe"><span class="olho">a sua história</span><h2 class="h2" id="tOrc">Conte o que você quer eternizar</h2><p class="lead">Preencha e sua mensagem abre pronta no WhatsApp da May. As respostas seguem a ordem de chegada.</p></div>
+  <form class="form" id="form" novalidate>
+    <div class="campos">
+      <label class="campo"><span>Seu nome</span><input id="fNome" name="nome" autocomplete="given-name" required></label>
+      <label class="campo"><span>Sentimento</span><select id="fSent" name="sentimento"><option value="">Ainda não sei</option><option value="amor">Amor</option><option value="saudade">Saudade</option><option value="fe">Fé</option><option value="recomeco">Recomeço</option><option value="forca">Força</option><option value="delicadeza">Delicadeza</option></select></label>
+      <label class="campo"><span>Lugar do corpo</span><input id="fLugar" name="lugar" required></label>
+      <label class="campo"><span>Tamanho aproximado</span><input id="fTam" name="tamanho" placeholder="Ex.: 12 cm"></label>
+      <label class="campo l2"><span>Sua ideia</span><textarea id="fIdeia" name="ideia" placeholder="Conte a história por trás da tatuagem"></textarea></label>
+    </div>
+    <p class="erro" id="fErro" role="alert" hidden></p>
+    <button class="bt pleno" type="submit">Enviar pelo WhatsApp</button>
+    <p class="ajuda">Valor mínimo por sessão: R$ 250. Se já tem referência, envie as fotos na conversa.</p>
+  </form>
+</section>
+
+<section id="faq" aria-labelledby="tFaq" style="padding-top:0">
+  <div class="cab sobe"><h2 class="h2" id="tFaq">Dúvidas</h2></div>
+  <div class="faq">
+    <details><summary>Qual é o valor mínimo?</summary><p>R$ 250. O orçamento final depende do tamanho, do lugar e dos detalhes da arte.</p></details>
+    <details><summary>Quanto tempo leva uma sessão?</summary><p>Depende muito da arte. Um raminho costuma levar de 3h a 3h30. Peças grandes podem pedir mais de um dia.</p></details>
+    <details><summary>Posso ver o desenho antes?</summary><p>Sim. As artes são feitas com antecedência e você vê o esboço para opinar.</p></details>
+    <details><summary>Atende sem agendamento?</summary><p>Não. O atendimento é privado e apenas com agendamento.</p></details>
+    <details><summary>Como me preparo para a sessão?</summary><p>Hidrate bem a pele nos dias anteriores. A May explica os cuidados específicos para o seu caso quando confirmar a data.</p></details>
+  </div>
+</section>
+</main>
+<footer class="rodape">
+  <img src="assets/img/logo-p.webp" alt="May Tattoo Artist" width="420" height="218" loading="lazy">
+  <p>Duo Ink Tattoo Studio, Feira de Santana, BA</p>
+  <nav aria-label="Contato"><a href="https://wa.me/5575982071367" target="_blank" rel="noopener">WhatsApp (75) 98207-1367</a><a href="https://www.instagram.com/tatuadora_may/" target="_blank" rel="noopener">Instagram @tatuadora_may</a></nav>
+  <small>Site por <a href="https://lrgz.com.br" target="_blank" rel="noopener">L R G Z</a></small>
+</footer>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Tatuagem ampliada" hidden>
+  <button class="lb-f" id="lbF" type="button" aria-label="Fechar">&#10005;</button>
+  <div class="lb-palco"><button class="lb-ant" id="lbA" type="button" aria-label="Anterior">&#8249;</button><img id="lbI" alt=""><button class="lb-prx" id="lbP" type="button" aria-label="Próxima">&#8250;</button></div>
+  <div class="lb-info"><em id="lbS"></em><h3 id="lbL"></h3><p id="lbT"></p><div class="lb-vistas" id="lbV"></div><button class="bt" id="lbQ" type="button">Quero uma assim</button></div>
+</div>
+<script>window.PECAS=[{"id": "borb-hib", "s": "recomeco", "leg": "Borboleta e hibisco", "t": "Metamorfose e delicadeza em uma única arte.", "fotos": ["041_0"]}, {"id": "pezinho", "s": "amor", "leg": "Pezinho do Calebe", "t": "O dia 19.01.2025 mudou tudo. O pezinho dele virou tatuagem realista.", "fotos": ["042_0"]}, {"id": "ramo-livre", "s": "delicadeza", "leg": "Ramo a mão livre", "t": "Desenhada direto na pele com canetinhas, para ter mais fluidez.", "fotos": ["047_0", "047_2", "047_1"]}, {"id": "jesus", "s": "fe", "leg": "Jesus", "t": "Uma arte que carrega fé, entrega e confiança.", "fotos": ["043_0", "043_1"]}, {"id": "dragoes", "s": "forca", "leg": "Dois dragões nas costas", "t": "Três dias de dedicação para concluir um sonho.", "fotos": ["084_0", "084_1"]}, {"id": "pai", "s": "saudade", "leg": "Asas para o pai", "t": "Primeira tatuagem da cliente: amor, lembranças e saudade.", "fotos": ["027_1", "027_0"]}, {"id": "sol-lua", "s": "fe", "leg": "Sol, Lua e feminino", "t": "Sol, Lua e a essência feminina em um só desenho.", "fotos": ["065_0", "065_2"]}, {"id": "mae-filho", "s": "amor", "leg": "Mãe e filho", "t": "Amor que acolhe e protege, em fine line.", "fotos": ["044_0"]}, {"id": "fenix", "s": "recomeco", "leg": "Fênix", "t": "Traços leves, com caimento pensado para o pé.", "fotos": ["077_1", "077_0", "077_2"]}, {"id": "agua-viva", "s": "delicadeza", "leg": "Água-viva", "t": "Linhas soltas que acompanham o braço.", "fotos": ["096_0", "096_1"]}, {"id": "leao-orn", "s": "forca", "leg": "Leão ornamental", "t": "Simetria total, ponto a ponto, em cerca de seis horas.", "fotos": ["165_2", "165_0", "165_1"]}, {"id": "coracao", "s": "saudade", "leg": "Coração anatômico", "t": "O amor de uma avó, que transcende o tempo.", "fotos": ["083_0"]}, {"id": "lirio", "s": "recomeco", "leg": "Lírio na coluna", "t": "A força de quem continua florescendo em todas as fases da vida.", "fotos": ["028_0", "028_1"]}, {"id": "benjamin", "s": "amor", "leg": "Benjamin", "t": "Boas-vindas a um filho amado e tão desejado.", "fotos": ["071_0", "071_1"]}, {"id": "n-senhora", "s": "fe", "leg": "Nossa Senhora", "t": "Fé, proteção e devoção.", "fotos": ["057_0"]}, {"id": "ciclo", "s": "saudade", "leg": "Ciclo da borboleta", "t": "Larva, casulo e borboleta em uma arte de homenagem.", "fotos": ["069_1", "069_2"]}, {"id": "raminho", "s": "delicadeza", "leg": "Raminho", "t": "Um dos trabalhos mais curtidos do perfil.", "fotos": ["105_1", "105_0", "105_2"]}, {"id": "dragao", "s": "forca", "leg": "Dragão", "t": "Força interior e sensibilidade em traços delicados.", "fotos": ["066_1", "066_0"]}, {"id": "borb-mao", "s": "recomeco", "leg": "Borboleta na mão", "t": "Uma jornada de transformação e liberdade.", "fotos": ["076_1", "076_0"]}, {"id": "floral-cost", "s": "delicadeza", "leg": "Floral nas costas", "t": "Bonita, cuidadosa, elegante e sem exageros.", "fotos": ["050_0", "050_1", "050_2"]}, {"id": "lotus", "s": "fe", "leg": "Lótus e Inefável", "t": "Existe uma beleza além das palavras.", "fotos": ["070_0"]}, {"id": "cobra", "s": "forca", "leg": "Cobra", "t": "Arte exclusiva.", "fotos": ["116_0"]}, {"id": "tudo-tempo", "s": "recomeco", "leg": "Tudo tem seu tempo", "t": "Transformação, delicadeza e beleza em cada detalhe.", "fotos": ["081_1", "081_0"]}, {"id": "lirios", "s": "delicadeza", "leg": "Lírios e borboletas", "t": "Pureza, renovação e força feminina.", "fotos": ["059_0"]}, {"id": "leoa", "s": "amor", "leg": "Leoa com filhotes", "t": "Uma homenagem aos filhos.", "fotos": ["236_0"]}, {"id": "elefante", "s": "forca", "leg": "Elefante e flores", "t": "Força, sabedoria e prosperidade.", "fotos": ["080_0", "080_1"]}, {"id": "ornamental", "s": "fe", "leg": "Ornamental", "t": "A flor de lótus: resiliência e crescimento.", "fotos": ["079_0"]}, {"id": "tartaruga", "s": "delicadeza", "leg": "Tartaruga", "t": "Elementos orgânicos, traços delicados e geometria.", "fotos": ["040_0", "040_1", "040_2"]}, {"id": "beija-flor", "s": "recomeco", "leg": "Beija-flor", "t": "Esperança e resiliência.", "fotos": ["074_0"]}, {"id": "floral-c", "s": "delicadeza", "leg": "Floral e ornamental", "t": "Elegância e delicadeza.", "fotos": ["095_0", "095_1"]}, {"id": "leoa-flor", "s": "forca", "leg": "Leoa com flores", "t": "Uma tatuagem tão representativa e especial.", "fotos": ["173_0", "173_1"]}, {"id": "amigas", "s": "saudade", "leg": "Buquê das amigas", "t": "Cada amiga desenhou uma flor, e tudo virou um único buquê.", "fotos": ["022_0"]}];window.COBS=[{"id": "ruth", "t": "A tatuagem antiga não era o estilo que ela queria. A resposta foi uma arte nova, em traços finos."}, {"id": "corvo", "t": "Uma arte com bastante preto, buscando leveza, originalidade e personalidade."}, {"id": "bracelete", "t": "Parte da tatuagem foi restaurada e completada com flores, para não ficar pesada."}];window.SENT={"amor": "Amor", "saudade": "Saudade", "fe": "Fé", "recomeco": "Recomeço", "forca": "Força", "delicadeza": "Delicadeza"};window.CENAS_LEG=[{"p": "saudade", "t": "Tatuagem real: homenagem ao pai"}, {"p": "amizade", "t": "Tatuagem real: cada amiga desenhou uma flor"}, {"p": "amor próprio", "t": "Arte da May: bem me quero"}, {"p": "amor de mãe", "t": "Tatuagem real: mãe e filho"}, {"p": "recomeço", "t": "Tatuagem real: tudo tem seu tempo"}];</script>
+<script src="assets/js/hero.js?v=1"></script>
+<script src="assets/js/site.js?v=1"></script>
+</body>
+</html>

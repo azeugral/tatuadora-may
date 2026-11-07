@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""Portfolio: sentimento + historia curta tirada das legendas dela. Nomes de clientes ficam de fora, exceto o que a propria arte mostra."""
+SENT = [('amor', 'Amor'), ('saudade', 'Saudade'), ('fe', 'Fé'), ('recomeco', 'Recomeço'), ('forca', 'Força'), ('delicadeza', 'Delicadeza')]
+P = [
+ dict(id='borb-hib', s='recomeco', leg='Borboleta e hibisco', fotos=['041_0'], t='Metamorfose e delicadeza em uma única arte.'),
+ dict(id='pezinho', s='amor', leg='Pezinho do Calebe', fotos=['042_0'], t='O dia 19.01.2025 mudou tudo. O pezinho dele virou tatuagem realista.'),
+ dict(id='ramo-livre', s='delicadeza', leg='Ramo a mão livre', fotos=['047_0', '047_2', '047_1'], t='Desenhada direto na pele com canetinhas, para ter mais fluidez.'),
+ dict(id='jesus', s='fe', leg='Jesus', fotos=['043_0', '043_1'], t='Uma arte que carrega fé, entrega e confiança.'),
+ dict(id='dragoes', s='forca', leg='Dois dragões nas costas', fotos=['084_0', '084_1'], t='Três dias de dedicação para concluir um sonho.'),
+ dict(id='pai', s='saudade', leg='Asas para o pai', fotos=['027_1', '027_0'], t='Primeira tatuagem da cliente: amor, lembranças e saudade.'),
+ dict(id='sol-lua', s='fe', leg='Sol, Lua e feminino', fotos=['065_0', '065_2'], t='Sol, Lua e a essência feminina em um só desenho.'),
+ dict(id='mae-filho', s='amor', leg='Mãe e filho', fotos=['044_0'], t='Amor que acolhe e protege, em fine line.'),
+ dict(id='fenix', s='recomeco', leg='Fênix', fotos=['077_1', '077_0', '077_2'], t='Traços leves, com caimento pensado para o pé.'),
+ dict(id='agua-viva', s='delicadeza', leg='Água-viva', fotos=['096_0', '096_1'], t='Linhas soltas que acompanham o braço.'),
+ dict(id='leao-orn', s='forca', leg='Leão ornamental', fotos=['165_2', '165_0', '165_1'], t='Simetria total, ponto a ponto, em cerca de seis horas.'),
+ dict(id='coracao', s='saudade', leg='Coração anatômico', fotos=['083_0'], t='O amor de uma avó, que transcende o tempo.'),
+ dict(id='lirio', s='recomeco', leg='Lírio na coluna', fotos=['028_0', '028_1'], t='A força de quem continua florescendo em todas as fases da vida.'),
+ dict(id='benjamin', s='amor', leg='Benjamin', fotos=['071_0', '071_1'], t='Boas-vindas a um filho amado e tão desejado.'),
+ dict(id='n-senhora', s='fe', leg='Nossa Senhora', fotos=['057_0'], t='Fé, proteção e devoção.'),
+ dict(id='ciclo', s='saudade', leg='Ciclo da borboleta', fotos=['069_1', '069_2'], t='Larva, casulo e borboleta em uma arte de homenagem.'),
+ dict(id='raminho', s='delicadeza', leg='Raminho', fotos=['105_1', '105_0', '105_2'], t='Um dos trabalhos mais curtidos do perfil.'),
+ dict(id='dragao', s='forca', leg='Dragão', fotos=['066_1', '066_0'], t='Força interior e sensibilidade em traços delicados.'),
+ dict(id='borb-mao', s='recomeco', leg='Borboleta na mão', fotos=['076_1', '076_0'], t='Uma jornada de transformação e liberdade.'),
+ dict(id='floral-cost', s='delicadeza', leg='Floral nas costas', fotos=['050_0', '050_1', '050_2'], t='Bonita, cuidadosa, elegante e sem exageros.'),
+ dict(id='lotus', s='fe', leg='Lótus e Inefável', fotos=['070_0'], t='Existe uma beleza além das palavras.'),
+ dict(id='cobra', s='forca', leg='Cobra', fotos=['116_0'], t='Arte exclusiva.'),
+ dict(id='tudo-tempo', s='recomeco', leg='Tudo tem seu tempo', fotos=['081_1', '081_0'], t='Transformação, delicadeza e beleza em cada detalhe.'),
+ dict(id='lirios', s='delicadeza', leg='Lírios e borboletas', fotos=['059_0'], t='Pureza, renovação e força feminina.'),
+ dict(id='leoa', s='amor', leg='Leoa com filhotes', fotos=['236_0'], t='Uma homenagem aos filhos.'),
+ dict(id='elefante', s='forca', leg='Elefante e flores', fotos=['080_0', '080_1'], t='Força, sabedoria e prosperidade.'),
+ dict(id='ornamental', s='fe', leg='Ornamental', fotos=['079_0'], t='A flor de lótus: resiliência e crescimento.'),
+ dict(id='tartaruga', s='delicadeza', leg='Tartaruga', fotos=['040_0', '040_1', '040_2'], t='Elementos orgânicos, traços delicados e geometria.'),
+ dict(id='beija-flor', s='recomeco', leg='Beija-flor', fotos=['074_0'], t='Esperança e resiliência.'),
+ dict(id='floral-c', s='delicadeza', leg='Floral e ornamental', fotos=['095_0', '095_1'], t='Elegância e delicadeza.'),
+ dict(id='leoa-flor', s='forca', leg='Leoa com flores', fotos=['173_0', '173_1'], t='Uma tatuagem tão representativa e especial.'),
+ dict(id='amigas', s='saudade', leg='Buquê das amigas', fotos=['022_0'], t='Cada amiga desenhou uma flor, e tudo virou um único buquê.'),
+]
+C = [
+ dict(id='ruth', a='118_1', d='118_0', leg='Borboleta que virou floral', t='A tatuagem antiga não era o estilo que ela queria. A resposta foi uma arte nova, em traços finos.'),
+ dict(id='corvo', a='093_1', d='093_0', leg='Escrita que virou corvo', t='Uma arte com bastante preto, buscando leveza, originalidade e personalidade.'),
+ dict(id='bracelete', a='421_1', d='421_0', leg='Escrita que virou bracelete', t='Parte da tatuagem foi restaurada e completada com flores, para não ficar pesada.'),
+]
