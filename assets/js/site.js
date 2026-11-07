@@ -3,7 +3,6 @@
   var $ = function (s, r) { return (r || document).querySelector(s); }, $$ = function (s, r) { return [].slice.call((r || document).querySelectorAll(s)); };
   var celular = matchMedia('(max-width:1023px)').matches || matchMedia('(pointer:coarse)').matches;
   var calmo = matchMedia('(prefers-reduced-motion:reduce)').matches;
-  var LEG = window.CENAS_LEG;
 
   /* topo e menu */
   var topo = $('#topo'), sobe = function () { topo.classList.toggle('cheio', scrollY > 40); };
@@ -29,15 +28,10 @@
   $$('video.auto').forEach(function (v) { iv.observe(v); });
 
   /* hero */
-  var fundo = $('#heroFundo'), pos = $('#heroPos'), hero = $('.hero'), pal = $('#heroPal'), leg = $('#heroLeg'), rod = $('#heroRod');
-  var mesa = 0, vis = true;
+  var fundo = $('#heroFundo'), pos = $('#heroPos'), hero = $('.hero');
+  var vis = true;
   new IntersectionObserver(function (e) { vis = e[0].isIntersecting; }, { threshold: .02 }).observe(hero);
   document.addEventListener('visibilitychange', function () { vis = !document.hidden; });
-  /* a legenda troca no mesmo instante em que a arte comeca a mudar */
-  function legenda(c) {
-    if (c === mesa) return; mesa = c; pal.textContent = LEG[c].p; leg.textContent = LEG[c].t;
-    rod.style.transition = 'none'; rod.style.opacity = .35; void rod.offsetWidth; rod.style.transition = ''; rod.style.opacity = 1;
-  }
   var avanca = null;
   function clique(e) { if (avanca && !e.target.closest('a,button')) avanca(); }
   hero.addEventListener('click', clique);
@@ -72,23 +66,22 @@
       var e = T.estado(tRel), seg = (e.passo + 1) % T.ordem.length;
       if (e.pausa && pular && T.pronto(seg)) { tRel = (Math.floor(tRel / T.PASSO) + 1) * T.PASSO; pular = false; ritmo = 1; }
       else if (!(e.pausa && e.fase > T.PASSO - .03 && !T.pronto(seg))) tRel += dt * ritmo;
-      var r = T.desenha(tRel, op); legenda(r.cena);
+      T.desenha(tRel, op); hero.dataset.etapa = T.estado(tRel).passo;
     }
     /* clique: arte parada segue na hora; no meio do voo, termina rapido e ja emenda a proxima */
     avanca = function () { pular = true; if (!T.estado(tRel).pausa) ritmo = 3; };
   }
   function video() {
     var v = document.createElement('video'); v.className = 'vd'; v.muted = true; v.loop = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.setAttribute('aria-hidden', 'true');
-    v.poster = 'assets/img/hero/poster.webp'; v.src = 'assets/video/hero.mp4?v=3'; v.preload = 'auto'; fundo.appendChild(v);
-    var PS = heroMay.PASSO, n = 3, VID = [0, 3, 4];
+    v.poster = 'assets/img/hero/poster.webp'; v.src = 'assets/video/hero.mp4?v=4'; v.preload = 'auto'; fundo.appendChild(v);
+    var PS = heroMay.PASSO;
     var p = v.play();
     if (p) p.catch(function () { v.remove(); webgl(70000); });
-    var ultimo = -1, etapa = 0;
+    var etapa = 0;
     (function lg() {
       requestAnimationFrame(lg); if (!vis) return;
-      var st = Math.floor((v.currentTime || 0) / PS), c = Math.floor(st / 2) % n;
-      if (st !== etapa) { etapa = st; v.playbackRate = 1; }
-      if (c !== ultimo) { ultimo = c; legenda(VID[c]); }
+      var st = Math.floor((v.currentTime || 0) / PS);
+      if (st !== etapa) { etapa = st; v.playbackRate = 1; hero.dataset.etapa = st; }
     })();
     /* no video o clique acelera ate a proxima etapa, sem salto de imagem */
     avanca = function () { v.playbackRate = 5; };

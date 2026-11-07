@@ -8,7 +8,6 @@ S = Path(__file__).resolve().parent.parent; R = S.parent / '_ref'
 sys.path.insert(0, str(S / 'tools'))
 import dados
 SENT = dict(dados.SENT)
-LEGS = [dict(p='saudade', t='Tatuagem real: homenagem ao pai'), dict(p='amizade', t='Tatuagem real: cada amiga desenhou uma flor'), dict(p='amor próprio', t='Arte da May: bem me quero'), dict(p='amor de mãe', t='Tatuagem real: mãe e filho'), dict(p='recomeço', t='Tatuagem real: tudo tem seu tempo')]
 
 def previa(f):
     i = Image.open(f).convert('RGB').resize((16, 20), Image.LANCZOS)
@@ -37,7 +36,7 @@ rep = {
  '{{COB1}}': dados.C[0]['id'], '{{COB1T}}': dados.C[0]['t'], '{{NEGRA}}': '191_0',
  '{{PECAS}}': json.dumps([dict(id=p['id'], s=p['s'], leg=p['leg'], t=p['t'], fotos=p['fotos']) for p in dados.P], ensure_ascii=False),
  '{{COBS}}': json.dumps([dict(id=c['id'], t=c['t']) for c in dados.C], ensure_ascii=False), '{{SENTJ}}': json.dumps(SENT, ensure_ascii=False),
- '{{LEGS}}': json.dumps(LEGS, ensure_ascii=False), '{{V}}': '6',
+ '{{V}}': '7',
 }
 for k, v in rep.items(): h = h.replace(k, v)
 (S / 'index.html').write_text(h, encoding='utf8')

@@ -80,8 +80,9 @@ section{padding:var(--sec) 0;position:relative}
 .hero-tit{font:500 clamp(26px,2.7vw,50px)/1.18 Cinzel,serif;display:block}
 .hero-txt{color:var(--mu);margin-top:18px;font-size:clamp(14.5px,1.05vw,16.5px)}
 .hero-lado .bt{margin-top:26px;width:100%;max-width:290px}
-.hero-rod{z-index:2;position:absolute;left:0;right:0;bottom:clamp(14px,3vh,30px);text-align:center;color:var(--mu);font-size:13.5px;line-height:1.5;padding:0 var(--marg);transition:opacity .28s var(--mol)}
-.hero-rod b{display:block;font:400 21px/1.3 Escrita,cursive;color:var(--ouro);padding-bottom:1px}
+.hero-rod{z-index:2;position:absolute;left:0;right:0;bottom:clamp(14px,3vh,30px);text-align:center;color:var(--mu);font-size:13.5px;line-height:1.5;padding:0 var(--marg);pointer-events:none}
+.t-clique{display:none}
+@media (hover:hover) and (pointer:fine){.t-toque{display:none}.t-clique{display:inline}}
 
 /* prova */
 .prova{padding:0;border-block:1px solid var(--li);background:var(--bg2)}
@@ -249,7 +250,6 @@ section{padding:var(--sec) 0;position:relative}
   .hero-bts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:14px}
   .hero-bts .bt{margin:0;max-width:none;padding:0 8px;font-size:12.5px;letter-spacing:.06em}
   .hero-rod{position:static;order:3;padding:0 var(--marg) 10px;font-size:12.5px}
-  .hero-rod b{font-size:19px}
   .hero-fundo .vd,.hero-fundo img.pos{top:50%;transform:translate(-50%,-50%);height:100%;width:auto;max-width:100%;aspect-ratio:1}
   .sobre .duo,.acao .duo{grid-template-columns:1fr}
   .negra{grid-template-columns:1fr 1fr}
@@ -328,7 +328,7 @@ section{padding:var(--sec) 0;position:relative}
     <a class="bt" href="#orcamento" data-d>Pedir orçamento</a>
   </div>
   <div class="hero-junto" aria-hidden="true">Transformo sentimentos em arte na pele</div>
-  <p class="hero-rod mob" id="heroRod" aria-live="off"><b id="heroPal">saudade</b><span id="heroLeg">Tatuagem real: homenagem ao pai</span></p>
+  <p class="hero-rod mob"><span class="t-toque">toque</span><span class="t-clique">clique</span> para mudar a arte</p>
   <div class="hero-fundo" id="heroFundo" role="button" tabindex="0" aria-label="Ver a próxima arte"><img class="pos" id="heroPos" src="assets/img/hero/poster.webp" alt="Tatuagem de borboleta da May desenhada em ouro" width="1000" height="1000" hidden></div>
   <div class="hero-lado d">
     <span class="hero-tit" aria-hidden="true">em arte<br>na pele</span>
@@ -472,7 +472,7 @@ section{padding:var(--sec) 0;position:relative}
   <div class="lb-palco"><button class="lb-ant" id="lbA" type="button" aria-label="Anterior">&#8249;</button><img id="lbI" alt=""><button class="lb-prx" id="lbP" type="button" aria-label="Próxima">&#8250;</button></div>
   <div class="lb-info"><em id="lbS"></em><h3 id="lbL"></h3><p id="lbT"></p><div class="lb-vistas" id="lbV"></div><button class="bt" id="lbQ" type="button">Quero uma assim</button></div>
 </div>
-<script>window.PECAS={{PECAS}};window.COBS={{COBS}};window.SENT={{SENTJ}};window.CENAS_LEG={{LEGS}};</script>
+<script>window.PECAS={{PECAS}};window.COBS={{COBS}};window.SENT={{SENTJ}};</script>
 <script src="assets/js/hero.js?v={{V}}"></script>
 <script src="assets/js/site.js?v={{V}}"></script>
 </body>

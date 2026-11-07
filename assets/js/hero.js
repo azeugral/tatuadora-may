@@ -9,8 +9,8 @@
     { p: 'mae', a: 'mae' },
     { p: 'recomeco', a: 'borboleta' }
   ];
-  /* cada etapa (palavra ou arte) dura 2,5 s: 1,4 s de voo + 1,1 s parada */
-  var D = { morf: 1.4, pausa: 1.1 }, PASSO = D.morf + D.pausa, PAR = PASSO * 2;
+  /* cada etapa (palavra ou arte) dura 4 s: 1,6 s de voo + 2,4 s parada */
+  var D = { morf: 1.6, pausa: 2.4 }, PASSO = D.morf + D.pausa, PAR = PASSO * 2;
 
   var VS_P = `#version 300 es
   precision highp float;
