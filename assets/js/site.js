@@ -33,7 +33,15 @@
   var mesa = 0, vis = true;
   new IntersectionObserver(function (e) { vis = e[0].isIntersecting; }, { threshold: .02 }).observe(hero);
   document.addEventListener('visibilitychange', function () { vis = !document.hidden; });
-  function legenda(c) { if (c === mesa) return; mesa = c; rod.style.opacity = 0; setTimeout(function () { pal.textContent = LEG[c].p; leg.textContent = LEG[c].t; rod.style.opacity = 1; }, 450); }
+  /* a legenda troca no mesmo instante em que a arte comeca a mudar */
+  function legenda(c) {
+    if (c === mesa) return; mesa = c; pal.textContent = LEG[c].p; leg.textContent = LEG[c].t;
+    rod.style.transition = 'none'; rod.style.opacity = .35; void rod.offsetWidth; rod.style.transition = ''; rod.style.opacity = 1;
+  }
+  var avanca = null;
+  function clique(e) { if (avanca && !e.target.closest('a,button')) avanca(); }
+  hero.addEventListener('click', clique);
+  fundo.addEventListener('keydown', function (e) { if ((e.key === 'Enter' || e.key === ' ') && avanca) { e.preventDefault(); avanca(); } });
   function estatico() { pos.hidden = false; rod.hidden = true; }
   function webgl(n) {
     var cv = document.createElement('canvas'); fundo.appendChild(cv);
@@ -49,7 +57,7 @@
       op = { lado: art * esc * .96, pt: 1.55 * esc, a: .3 / Math.max(1, esc * .75), cx: 0, cy: -.015 };
     }
     mede(); addEventListener('resize', mede);
-    var carregando = 0, t0 = null, tRel = 0, prev = 0;
+    var carregando = 0, t0 = null, tRel = T.D.morf + .05, prev = 0, ritmo = 1, pular = false;
     function proximo() {
       var k = carregando; if (k >= T.ordem.length) return;
       var im = new Image(); im.onload = function () { T.carrega(k, im); carregando++; if (carregando === 2 && !t0) { t0 = 1; cv.style.opacity = 1; requestAnimationFrame(voa); } setTimeout(proximo, 60); };
@@ -61,19 +69,29 @@
       requestAnimationFrame(voa);
       var dt = Math.min(.05, (ag - prev) / 1000); prev = ag;
       if (!vis) return;
-      var e = T.estado(tRel), b = e.b;
-      if (!T.pronto(b) && e.m === 0 && e.fase > T.D.pal - .05) { /* espera a proxima arte */ } else tRel += dt;
+      var e = T.estado(tRel), seg = (e.passo + 1) % T.ordem.length;
+      if (e.pausa && pular && T.pronto(seg)) { tRel = (Math.floor(tRel / T.PASSO) + 1) * T.PASSO; pular = false; ritmo = 1; }
+      else if (!(e.pausa && e.fase > T.PASSO - .03 && !T.pronto(seg))) tRel += dt * ritmo;
       var r = T.desenha(tRel, op); legenda(r.cena);
     }
+    /* clique: arte parada segue na hora; no meio do voo, termina rapido e ja emenda a proxima */
+    avanca = function () { pular = true; if (!T.estado(tRel).pausa) ritmo = 3; };
   }
   function video() {
     var v = document.createElement('video'); v.className = 'vd'; v.muted = true; v.loop = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.setAttribute('aria-hidden', 'true');
-    v.poster = 'assets/img/hero/poster.webp'; v.src = 'assets/video/hero.mp4?v=2'; v.preload = 'auto'; fundo.appendChild(v);
-    var P = heroMay.PAR, n = 3, VID = [0, 3, 4];
+    v.poster = 'assets/img/hero/poster.webp'; v.src = 'assets/video/hero.mp4?v=3'; v.preload = 'auto'; fundo.appendChild(v);
+    var PS = heroMay.PASSO, n = 3, VID = [0, 3, 4];
     var p = v.play();
     if (p) p.catch(function () { v.remove(); webgl(70000); });
-    var ultimo = -1;
-    (function lg() { requestAnimationFrame(lg); if (!vis) return; var c = Math.floor((v.currentTime || 0) / P) % n; if (c !== ultimo) { ultimo = c; legenda(VID[c]); } })();
+    var ultimo = -1, etapa = 0;
+    (function lg() {
+      requestAnimationFrame(lg); if (!vis) return;
+      var st = Math.floor((v.currentTime || 0) / PS), c = Math.floor(st / 2) % n;
+      if (st !== etapa) { etapa = st; v.playbackRate = 1; }
+      if (c !== ultimo) { ultimo = c; legenda(VID[c]); }
+    })();
+    /* no video o clique acelera ate a proxima etapa, sem salto de imagem */
+    avanca = function () { v.playbackRate = 5; };
   }
   if (calmo) estatico(); else if (celular) video(); else webgl(window.__n || 260000);
 

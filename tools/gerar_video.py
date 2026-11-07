@@ -25,7 +25,7 @@ with sync_playwright() as p:
     b, g = abre(p)
     PAR = g.evaluate('heroMay.PAR'); D = g.evaluate('T.D')
     if 'poster' in Q:
-        t = PAR * 2 + D['pal'] + D['ida'] + 1.6
+        t = PAR * 2 + g.evaluate('T.PASSO') + D['morf'] + .6
         for k in range(14): foto(g, t - (14 - k) / 30)
         Image.open(io.BytesIO(foto(g, t, .98))).save(S / 'assets/img/hero/poster.webp', quality=88, method=6)
         print('poster', flush=True)

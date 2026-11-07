@@ -3,7 +3,7 @@
 import subprocess, sys
 from pathlib import Path
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageFilter
 S = Path(__file__).resolve().parent.parent; R = S.parent / '_ref'
 sys.path.insert(0, str(S / 'tools')); import dados
 def tom(im):
@@ -29,8 +29,8 @@ for c in dados.C:
     d = q45(tom(Image.open(R / f"ig/fotos/{c['d']}.jpg").convert('RGB')))
     a.resize((800, 1000), Image.LANCZOS).save(S / f"assets/img/c/{c['id']}-a.webp", quality=80, method=6)
     d.resize((800, 1000), Image.LANCZOS).save(S / f"assets/img/c/{c['id']}-d.webp", quality=80, method=6)
-d = Image.open(R / 'ig/fotos/029_0.jpg').convert('RGB'); print(d.size)
-d.resize((1280, round(1280 * d.height / d.width)), Image.LANCZOS).save(S / 'assets/img/duo.webp', quality=82, method=6)
+# foto de perfil do Instagram dela (768 px): amplia com nitidez leve para a coluna da secao Sobre
+Image.open(R / 'retrato/perfil.jpg').convert('RGB').resize((1152, 1152), Image.LANCZOS).filter(ImageFilter.UnsharpMask(1.6, 45, 2)).save(S / 'assets/img/may.webp', quality=88, method=6)
 for n, f in (('cic-1ano', 'hl/cicatrizadas2/005.jpg'), ('cic-2anos', 'hl/cicatrizadas2/006.jpg')):
     i = Image.open(R / f).convert('RGB'); w = 540; print(i.size)
     i.resize((w, round(i.height * w / i.width)), Image.LANCZOS).save(S / f'assets/img/{n}.webp', quality=78, method=6)

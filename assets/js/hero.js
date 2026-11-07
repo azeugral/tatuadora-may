@@ -9,8 +9,8 @@
     { p: 'mae', a: 'mae' },
     { p: 'recomeco', a: 'borboleta' }
   ];
-  var D = { pal: 1.5, ida: 2.7, arte: 3.5, volta: 2.1 };
-  var PAR = D.pal + D.ida + D.arte + D.volta;
+  /* cada etapa (palavra ou arte) dura 2,5 s: 1,4 s de voo + 1,1 s parada */
+  var D = { morf: 1.4, pausa: 1.1 }, PASSO = D.morf + D.pausa, PAR = PASSO * 2;
 
   var VS_P = `#version 300 es
   precision highp float;
@@ -150,12 +150,8 @@
       alvos[k] = b;
     }
     function estado(t) {
-      var n = cenas.length, tt = ((t % (PAR * n)) + PAR * n) % (PAR * n), c = Math.floor(tt / PAR), s = tt - c * PAR, k = c * 2, m = 0, a, b;
-      if (s < D.pal) { a = k; b = k + 1; m = 0; }
-      else if (s < D.pal + D.ida) { a = k; b = k + 1; m = (s - D.pal) / D.ida; }
-      else if (s < D.pal + D.ida + D.arte) { a = k; b = k + 1; m = 1; }
-      else { a = k + 1; b = (k + 2) % (n * 2); m = (s - D.pal - D.ida - D.arte) / D.volta; }
-      return { a: a, b: b, m: m, cena: c, fase: s };
+      var n = cenas.length * 2, tot = PASSO * n, tt = ((t % tot) + tot) % tot, i = Math.min(n - 1, Math.floor(tt / PASSO)), s = tt - i * PASSO;
+      return { a: (i + n - 1) % n, b: i, m: Math.min(1, s / D.morf), cena: Math.floor(i / 2), fase: s, passo: i, pausa: s >= D.morf };
     }
     function liga(loc, b) { gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.vertexAttribPointer(loc, 4, gl.SHORT, true, 8, 0); }
     var ult = -1;
@@ -184,8 +180,9 @@
       gl.drawArrays(gl.TRIANGLES, 0, 3);
       return e;
     }
-    return { ordem: ordem, cenas: cenas, carrega: carrega, tamanho: tamanho, desenha: desenha, estado: estado, pronto: function (k) { return !!alvos[k]; }, total: PAR * cenas.length, D: D, flut: flut };
+    return { ordem: ordem, cenas: cenas, carrega: carrega, tamanho: tamanho, desenha: desenha, estado: estado, pronto: function (k) { return !!alvos[k]; }, total: PAR * cenas.length, D: D, PASSO: PASSO, flut: flut };
   };
   window.heroMay.CENAS = CENAS;
   window.heroMay.PAR = PAR;
+  window.heroMay.PASSO = PASSO;
 })();
